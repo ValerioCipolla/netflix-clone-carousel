@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix slides clone</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li>Categories <i class="fas fa-caret-down"></i></li>
+      </ul>
+      <ul id="dropdown" class="invisible">
+        <li id="best-rated-btn">Best rated</li>
+        <li id="comedy-btn">Comedy</li>
+        <li id="drama-btn">Drama</li>
+        <li id="horror-btn">Horror</li>
+      </ul>
+    </nav>
+    <div class="netflix-logo">
+      <img
+        src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png"
+        alt="Netflix-Logo"
+      />
+    </div>
+    <div class="carousel">
+      <div>
+        <h1 class="genre">Popular on Netflix</h1>
+      </div>
+      <div class="carousel-box"></div>
+      <a class="switchLeft sliderButton"><</a>
+      <a class="switchRight sliderButton">></a>
+    </div>
+  </body>
+</html>

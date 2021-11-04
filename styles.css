@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav {
+  user-select: none;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: white;
+}
+
+#nav li {
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+#nav li:hover {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav i {
+  margin: 0 10px;
+}
+
+#dropdown {
+  background-image: linear-gradient(to bottom, #262626, #1a1a1a);
+  border-bottom: 1px solid white;
+  color: white;
+  list-style: none;
+  position: absolute;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#dropdown li {
+  margin: 5px 0;
+}
+
+#dropdown li:hover {
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.netflix-logo {
+  height: 15vw;
+  width: 100%;
+  text-align: center;
+}
+
+.netflix-logo img {
+  height: 100%;
+}
+
+.carousel {
+  height: 250px;
+  position: relative;
+  width: 80%;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight {
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 250px;
+  color: #808080;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+  user-select: none;
+}
+
+.carousel .switchLeft:hover,
+.carousel .switchRight:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.carousel .genre {
+  position: absolute;
+  height: 50px;
+  top: -50px;
+  color: whitesmoke;
+  font-weight: lighter;
+}
+.carousel .switchLeft {
+  position: absolute;
+  left: -50px;
+}
+
+.carousel .switchRight {
+  position: absolute;
+  right: -50px;
+}
+
+.carousel-box {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.movie-img {
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.movie-img:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
