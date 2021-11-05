@@ -213,3 +213,70 @@ nav {
   background-color: rgba(229, 9, 20, 0.5);
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+
+  body {
+    height: auto;
+  }
+  
+  #nav {
+    position: relative;
+  }
+  
+  #nav li:hover {
+    text-decoration: none;
+  }
+  
+  #dropdown li:hover {
+    text-decoration: none;
+  }
+  
+  .netflix-logo {
+    height: 100px;
+    max-width: 100%;
+    margin: 50px auto;
+  }
+
+  .carousel {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel .genre {
+    position: relative;
+    height: auto;
+    top: auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .carousel .switchLeft,
+  .carousel .switchRight {
+    display: none;
+  }
+  
+  .carousel-box {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .movie-img {
+    min-width: 100px;
+    max-width: 100px;
+    height: 150px;
+    cursor: default;
+    transition: none;
+    margin: 5px auto;
+  }
+  
+  .movie-img:hover {
+    transform: none;
+    z-index: auto;
+  }
+  
+}

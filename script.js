@@ -9,7 +9,7 @@ const bestRatedButton = document.getElementById("best-rated-btn");
 const comedyButton = document.getElementById("comedy-btn");
 const dramaButton = document.getElementById("drama-btn");
 const horrorButton = document.getElementById("horror-btn");
-const displayedGenre = document.querySelector(".genre");
+const displayedGenre = document.querySelector(".genre").firstElementChild;
 let movieList = [];
 
 async function showPickedCategory(event) {
